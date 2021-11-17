@@ -1,38 +1,44 @@
-.App {
+.not-found-container{
   text-align: center;
+  color: teal;
+}
+.product-pic{
+  
+  height:350px;
+  width:250px;
+  object-fit: cover;
+}
+.product-container{
+  
+  width:250px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+
+}
+.product-list{
+  display:flex;
+  gap:24px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product-show-button{
+  font-size: 18px;
+  margin-bottom: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-product-form{
+  margin:20px;
   display: flex;
+  gap: 10px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.not-found-image{
+  width: 100%;
+  object-fit: cover;
+}
+body{
+  font-family: 'Poppins', sans-serif;
 }
