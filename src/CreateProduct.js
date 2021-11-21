@@ -4,6 +4,7 @@ import { useHistory} from "react-router-dom";
 import { useFormik } from "formik";
 import * as yup from "yup";
 
+
 export function CreateProduct() {
   const history =useHistory();
 
@@ -18,7 +19,7 @@ export function CreateProduct() {
     .required("why not fill this picture?😯"),
 
     rating: yup
-    .string()  
+    .number()  
     .min(0)
     .max(5)
     .required("why not fill this rating?😯"),

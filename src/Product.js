@@ -7,7 +7,7 @@ export function Product({ name , pic ,rating,price,deleteButton,editButton}){
             <img className="product-pic" src={pic} alt={name} />
             <CardContent>
             <h3>{name}</h3>
-            <p>{rating}</p>
+            <p>{rating} ⭐</p>
             <h3>{price}</h3>
             
             <CardActions>
